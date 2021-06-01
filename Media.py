@@ -89,11 +89,11 @@ def login()
   begin
     system('clear')
     puts($logo)
-    puts  \x1b[1;37;40m1. Login Via Id/email/password")
+    puts \x1b[1;37;40m1. Login Via Id/email/password")
     puts  \x1b[1;37;40m2. Login Via Token")
     puts  \x1b[1;37;40m3. Report Bug")
     puts \x1b[1;37;40m0. exit")
-    print \x1b[1;91m▶\x1b[1;97m ")
+    prin \x1b[1;91m▶\x1b[1;97m ")
     log = gets.chomp()
     if log == '1' or log == '01'
       loginpw()
