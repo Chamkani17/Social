@@ -362,13 +362,13 @@ def Info()
     puts ("\033[92m[] birthday : "+data['birthday']) if data.key? ('birthday')
     puts ("\033[92m[] Status : "+data['relationship_status']) if data.key? ('relationship_status')
     puts ("\033[92m[] Religion : "+data['religion']) if data.key? ('religion')
-    data['interested_in'].each {|i| puts ("\033[92m[✓] Interested in: "+i)} if data.key? ('interested_in')
+    data['interested_in'].each {|i| puts ("\033[92m[] Interested in: "+i)} if data.key? ('interested_in')
     puts ("\033[92m[] Email : "+data['email']) if data.key? ('email')
     puts ("\033[92m[] Phone : "+data['mobile_phone']) if data.key? ('mobile_phone')
     puts ("\033[92m[] Location : "+data['location']['name']) if data.key? ('location')
     puts ("\033[92m[] Hometown : "+data['hometown']['name']) if data.key? ('hometown')
-    data['education'].each {|i| puts ("\033[92m[✓] #{i['type']} : #{i['school']['name']}")} if data.key? ('education')
-    data['work'].each {|i| puts ("\033[92m[✓] Work : #{i['employer']['name']}")} if data.key? ('work')
+    data['education'].each {|i| puts ("\033[92m[] #{i['type']} : #{i['school']['name']}")} if data.key? ('education')
+    data['work'].each {|i| puts ("\033[92m[] Work : #{i['employer']['name']}")} if data.key? ('work')
   end
 end
 
