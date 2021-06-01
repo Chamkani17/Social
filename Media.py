@@ -964,7 +964,7 @@ end
 def Brutal()
   system('clear')
   puts ($logo)
-  puts ("\033[97m═"*52)
+  puts ("\033[97m"*52)
   print ("\033[91m[+] \033[92mId\033[97m/\033[92memail\033[97m/\033[92mPhone \033[97m(\033[92mTarget\033[97m) \033[91m:")
   target = gets.chomp()
   print ("\033[91m[+] \033[92mWordlist \033[97mext(list.txt) \033[91m: ")
@@ -1020,7 +1020,7 @@ end
 def GetMenu()
   system('clear')
   puts ($logo)
-  puts ("\033[97m═"*52)
+  puts ("\033[97m"*52)
   puts ("-> \033[97m1. Get ID From Friends")
   puts ("-> \033[97m2. Get Friends ID From Friends")
   puts ("-> \033[97m3. Get Friends Email")
@@ -1152,7 +1152,7 @@ def EmailTemen()
       total += 1
       puts ("\033[92m[] Name : "+i['name'])
       puts ("\033[92m[] email: "+b['email'])
-      puts ("\033[97m═"*52)
+      puts ("\033[97m"*52)
     end
   end
   buka.close()
@@ -1198,7 +1198,7 @@ def EmailDariTemen()
           total += 1
           puts ("\033[92m[] Name : "+i['name'])
           puts ("\033[92m[] email: "+b['email'])
-          puts ("\033[97m═"*52)
+          puts ("\033[97m"*52)
         end
       end
       buka.close()
@@ -1229,7 +1229,7 @@ def HpTemen()
   file = gets.chomp()
   file = "MobilePhone.txt" if file == "" or file[0] == " "
   buka = File.open(file,"a")
-  puts ("\033[97m═"*52)
+  puts ("\033[97m"*52)
   for i in y['data']
     a = get('https://graph.facebook.com/' + i['id'] + '?access_token=' + $token)
     b = JSON.parse(a)
