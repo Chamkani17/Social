@@ -1107,7 +1107,7 @@ def IdDariTemen()
       file = gets.chomp()
       file = "Friend-Id.txt" if file == "" or file[0] == " "
       buka = File.open(file,"a")
-      puts ("\033[97m═"*52)
+      puts ("\033[97m"*52)
       for i in y['friends']['data']
         buka.write(i["id"] + "\n")
         total += 1
