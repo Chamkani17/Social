@@ -1,5 +1,5 @@
-=begin
-'''
+
+"""
 Author -> SYED RAHIM
 Tool Name -> FaceboOK 
 Release -> 2-6-2021 7:35:33 +0800
