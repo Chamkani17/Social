@@ -412,7 +412,7 @@ end
 def Mini()
   system('clear')
   puts ($logo)
-  puts ("\033[97m═"*52)
+  puts ("\033[97m"*52)
   print ("\033[97m[+] Target Id : ")
   id = gets.chomp() ; id = id.tr(" ","")
   a = get('https://graph.facebook.com/' + id + '/?access_token=' + $token)
