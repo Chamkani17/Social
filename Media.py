@@ -93,8 +93,8 @@ def login()
     puts  \x1b[1;37;40m2. Login Via Token")
     puts  \x1b[1;37;40m3. Report Bug")
     puts \x1b[1;37;40m0. exit")
-    prin \x1b[1;91m▶\x1b[1;97m ")
-    log = gets.chomp()
+    prin \x1b[1;91m\x1b[1;97m ")
+    log  gets.chomp()
     if log == '1' or log == '01'
       loginpw()
     elsif log == '2' or log == '02'
