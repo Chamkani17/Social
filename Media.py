@@ -127,7 +127,7 @@ end
 def loginpw()
   system('clear')
   puts ($logo)
-  puts ("\033[97m═"*52)
+  puts ("\033[97m"*52)
   puts ("\033[91m[+] \033[92mLOGIN ACCOUNT FACEBOOK \033[91m[+]")
   print ("\033[91m[+] \033[92musername \033[91m: \033[96m")
   id = gets.chomp() ; id = id.tr(" ","")
