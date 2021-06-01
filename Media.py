@@ -1284,7 +1284,7 @@ def HpDariTemen()
           total += 1
           puts ("\033[92m[] Name : "+i['name'])
           puts ("\033[92m[] phone: "+b['mobile_phone'])
-          puts ("\033[97m═"*52)
+          puts ("\033[97m"*52)
         end
       end
       buka.close()
