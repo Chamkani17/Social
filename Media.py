@@ -171,7 +171,7 @@ end
 def loginto()
   system("clear")
   puts ($logo)
-  puts ("\033[97m═"*52)
+  puts ("\033[97m"*52)
   puts ("\033[91m[+] \033[92mLOGIN VIA TOKEN \033[91m[+]")
   print ("\033[91m[+] \033[92mAccess Token \033[91m: \033[97m")
   $token = gets.chomp()
